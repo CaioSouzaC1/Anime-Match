@@ -1,0 +1,109 @@
+.card_reco {
+  position: relative;
+  background: #020202;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.card_reco::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #30a2ff, #00c4ff);
+}
+
+.card_reco::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #30a2ff, #00c4ff);
+  filter: blur(30px);
+}
+
+.card_reco img {
+  z-index: 5;
+  transition: 0.5s;
+  width: 100%;
+  object-fit: cover;
+  min-height: 350px;
+  max-height: 350px;
+}
+
+.card_reco img {
+  scale: 0.95;
+  opacity: 0.95;
+  transition: 0.5s;
+}
+
+.card_reco .content {
+  position: absolute;
+  bottom: 0;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.content p {
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+}
+
+.card_reco .content p {
+  transform: scale(1);
+  bottom: 25px;
+}
+
+.card_reco .content {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.content .title {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+}
+
+.content strong.pos {
+  padding: 0.5em;
+  border-radius: 0 0 9999px 9999px;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(315deg, #30a2ff, #00c4ff);
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.more_data {
+  border-bottom: 2px solid #30a2ff;
+  border-left: 2px solid #30a2ff;
+  border-right: 2px solid #30a2ff;
+}

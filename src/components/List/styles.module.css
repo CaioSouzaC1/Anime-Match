@@ -1,0 +1,19 @@
+.calculate_button {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  z-index: 99;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+div.calculate_button_show {
+  bottom: 1.5em;
+  opacity: 1;
+}
+
+.calculate_button,
+.calculate_button_show {
+  transition: 0.5s ease;
+}
